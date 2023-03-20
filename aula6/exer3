@@ -1,0 +1,18 @@
+
+package aula6;
+
+public class exer3 {
+    public static void main (String [] args){
+        
+        double chico = 1.50;
+        double ze = 1.10;
+        int anos = 0;
+        
+        while (ze < chico){
+            ze = ze + 0.03;
+            chico = chico + 0.02;
+            anos = anos + 1;
+        }
+        System.err.println("demorou: " + anos + " para ze ser maior ");
+    }
+}
