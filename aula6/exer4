@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class exer4 {
+    public static void main (String [] args){
+        Scanner sc = new Scanner(System.in);
+        
+        double pesoInic;
+        double tempo = 0;
+        
+        System.err.println("digite o peso do material ");
+        pesoInic = sc.nextDouble();
+        
+        while (pesoInic >= 0.0005){
+            pesoInic = pesoInic / 2;
+            tempo = tempo + 50;
+        
+    }
+        tempo = tempo/60;
+        System.err.println("demorou " + tempo + "min para chegar na massa desejada");
+    }
+    
+}
