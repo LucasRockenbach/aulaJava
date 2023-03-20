@@ -1,0 +1,25 @@
+
+package aula6;
+
+import java.util.Scanner;
+
+public class exer6 {
+    public static void main (String [] args){
+        
+        Scanner sc = new Scanner (System.in);
+        System.err.println("digite a velocidade do carro");
+        float veloCarro = sc.nextFloat();
+        System.err.println("digite a velocidade da rodovia");
+        float veloVia = sc.nextFloat();
+        
+        if (veloCarro >= veloVia * 0.2 + veloVia){
+                    System.err.println("sua multa é de R$ 130,00 ");
+
+        }if (veloCarro >= veloVia * 0.21 + veloVia && veloCarro >= veloVia * 0.5 + veloVia ){
+            System.err.println("sua multa é de R$ 195,00 ");
+        }if (veloCarro > veloVia * 0.5 + veloVia){
+            System.err.println("sua multa é de R$ 880,00");
+
+        }
+    }
+}
