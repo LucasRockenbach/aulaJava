@@ -1,0 +1,31 @@
+package aula8;
+
+import java.util.Scanner;
+
+public class BancoMain {
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		
+		double valor1, valor2;
+		
+		System.out.println("digite o valor que quer sacar");
+		valor1 = input.nextDouble();
+		System.out.println("digite o valor que quer depositar");
+		valor2 = input.nextDouble();
+
+		
+		Banco b1 = new Banco();
+				
+		b1.Sacar(valor1);
+		b1.Depositar(valor2);
+		
+		System.out.println(b1.imprimir());
+		
+		
+		
+
+	}
+
+}
