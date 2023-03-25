@@ -1,0 +1,62 @@
+package aula8;
+
+public class Banco {
+	private String tipoConta;
+	private int numConta;
+	private String nome;
+	private double saldo;
+	public String getTipoConta() {
+		return tipoConta;
+	}
+	public void setTipoConta(String tipoConta) {
+		this.tipoConta = tipoConta;
+	}
+	public int getNumConta() {
+		return numConta;
+	}
+	public void setNumConta(int numConta) {
+		this.numConta = numConta;
+	}
+	public String getNome() {
+		return nome;
+	}
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	public double getSaldo() {
+		return saldo;
+	}
+	public void setSaldo(double saldo) {
+		this.saldo = saldo;
+	}
+	public double criarConta() {
+		return saldo + 100;
+	}
+	
+	public double Sacar(double valor) {
+		
+		if (saldo >= valor) {
+			saldo = saldo - valor;
+		}else {
+			System.out.println("Saldo indisponivel ");
+		}
+		return saldo;
+	}
+	public double Depositar(double valor) {
+		return saldo + valor;
+	}
+	
+	public String imprimir () {
+		
+		System.out.println("o tipo da conta é " + this.getTipoConta());
+		System.out.println("o numero da conta é " + this.getNumConta());
+		System.out.println("o dono da conta é " + this.getNome());
+		System.out.println("o saldo da conta é " + this.getSaldo());
+
+
+		
+
+		
+		return null;
+	}
+}
