@@ -1,0 +1,58 @@
+package aula8;
+
+public class pseudoCalculadora {
+
+	private int x;
+	private int y;
+	
+	
+		
+	public int getX() {
+		return x;
+	}
+	public void setX(int x) {
+		this.x = x;
+	}
+	public int getY() {
+		return y;
+	}
+	public void setY(int y) {
+		this.y = y;
+	}
+	
+	public int soma () {
+		return x + y;
+	
+		
+	}
+	public int subtracao () {
+		return x - y;
+	
+		
+	}
+	public int multiplicacao () {
+		return x * y;
+	
+		
+	}public int divisao () {
+		if (y == 0) {
+			return -1;
+		}else {
+			
+		return x / y;
+		}
+	
+		
+	}
+	public String Status() {
+		System.out.println("o valor de x é " + this.getX() );
+		System.out.println("o valor de y é " + this.getY() );
+		System.out.println("o valor da soma é " + this.soma());
+		System.out.println("o valor da multiplicação é " + this.multiplicacao());
+		System.out.println("o valor da divisão é " + this.divisao());
+
+		System.out.println("o valor da subtração é " + this.subtracao());
+		return null;
+	}
+
+}
