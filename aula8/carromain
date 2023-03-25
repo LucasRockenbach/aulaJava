@@ -1,0 +1,27 @@
+package aula8;
+
+import java.util.Scanner;
+
+public class CarroMain {
+
+	public static void main(String[] args) {
+
+		Scanner input = new Scanner (System.in);
+		String tipo, cor, placa;
+		int numporta;
+		
+		System.out.println("digite o tipo do carro");
+		tipo = input.next();
+		System.out.println("digite a cor do carro");
+		cor = input.next();
+		System.out.println("digite a placa do carro");
+		placa = input.next();System.out.println("digite o numero de portas do carro");
+		numporta = input.nextInt();
+		
+		
+		carro c1 = new carro(tipo, cor, placa, numporta);
+		
+		System.out.println(c1.status());
+	}
+
+}
