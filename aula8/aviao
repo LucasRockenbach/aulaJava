@@ -1,0 +1,78 @@
+package aula9;
+
+public class Aviao {
+	private int poltrona[];
+	
+	public Aviao() {
+		poltrona = new int [100];
+		inicializa();
+		
+	}
+	public Aviao(int [] poltronas) {
+		this.poltrona = poltrona;
+	}
+	private void inicializa() {
+		for (int i = 0; i<100; i++) {
+			poltrona[i] = -1;
+		}
+	}
+	
+	public int[] getPoltrona() {
+		return poltrona;
+	}
+	public void setPoltrona(int[] poltrona) {
+		this.poltrona = poltrona;
+	}
+	
+	
+	
+	public int proximoLivre() {
+		int posicao = -1;
+		
+		for(int i = 0; i<100; i++) {
+			if (poltrona[i] == -1) {
+				posicao = i;
+				return i;
+			}
+		}
+		
+		return -1;
+	}
+
+	public void verificaPoltrona(int x) {
+		if(poltrona[x] == -1) {
+			System.out.println("poltrona livre");
+		}else {
+			System.out.println("poltrona ocupada");
+		}
+		
+	}
+	public int reservaPoltrona() {
+		int lugar = proximoLivre();
+		if(lugar != -1) {
+			poltrona[lugar] = 0;
+			}
+		return lugar;
+		
+	}
+	public int poltronasVagas() {
+		int cont = 0;
+		for (int i = 0; i < 100; i ++) {
+			if (poltrona[i] == -1) {
+				cont++;
+			}
+			
+		}return cont;
+			
+		
+	}
+	public int poltronasOcupadas() {
+		int cont = 0;
+		for (int i = 0; i<100; i++) {
+			if (poltrona[i] == 0) {
+				cont++;
+			}
+		}
+		return cont;
+	}
+}
