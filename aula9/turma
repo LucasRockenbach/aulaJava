@@ -1,0 +1,81 @@
+package aula9;
+
+public class turma {
+	private String nome;
+	private String turno;
+	private String nomeCurso;
+	private int quantAlunos;
+	private String disciplina;
+	
+	public turma() {
+		
+	}
+
+
+	public turma(String nome, String turno, String nomeCurso, int quantAlunos, String disciplina) {
+		this.nome = nome;
+		this.turno = turno;
+		this.nomeCurso = nomeCurso;
+		this.quantAlunos = quantAlunos;
+		this.disciplina = disciplina;
+	}
+
+
+	public String getNome() {
+		return nome;
+	}
+
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+
+	public String getTurno() {
+		return turno;
+	}
+
+
+	public void setTurno(String turno) {
+		this.turno = turno;
+	}
+
+
+	public String getNomeCurso() {
+		return nomeCurso;
+	}
+
+
+	public void setNomeCurso(String nomeCurso) {
+		this.nomeCurso = nomeCurso;
+	}
+
+
+	public int getQuantAlunos() {
+		return quantAlunos;
+	}
+
+
+	public void setQuantAlunos(int quantAlunos) {
+		this.quantAlunos = quantAlunos;
+	}
+
+
+	public String getDisciplina() {
+		return disciplina;
+	}
+
+
+	public void setDisciplina(String disciplina) {
+		this.disciplina = disciplina;
+	}
+	
+	public disciplina getdisciplina() {
+		return disciplina;
+		
+	}
+	public void setdisciplina(Disciplina, disciplina) {
+		this.disciplina = disciplina;
+	}
+	
+}
