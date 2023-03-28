@@ -1,0 +1,52 @@
+package aula9;
+
+public class disciplina {
+	
+	private String nome;
+	private String numero_creditos;
+	private String ementa;
+	
+	public disciplina() {
+		
+	}
+
+	public disciplina(String nome, String numero_creditos, String ementa) {
+		super();
+		this.nome = nome;
+		this.numero_creditos = numero_creditos;
+		this.ementa = ementa;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public String getNumero_creditos() {
+		return numero_creditos;
+	}
+
+	public void setNumero_creditos(String numero_creditos) {
+		this.numero_creditos = numero_creditos;
+	}
+
+	public String getEmenta() {
+		return ementa;
+	}
+
+	public void setEmenta(String ementa) {
+		this.ementa = ementa;
+	}
+	
+	public String status() {
+		return "o nome do aluno é " + this.nome + 
+				" o numero de horas é " + this.numero_creditos + 
+				" a ementa é " + this.ementa;
+	}
+	
+	
+	
+}
