@@ -1,0 +1,25 @@
+package aula11;
+
+public class TesteMain {
+
+	public static void main(String[] args) {
+		
+		Pessoa p1 = new Pessoa();
+		p1.setNome("maria do carmo");
+		p1.setCPF("4545454544");
+		p1.setSexo('f');
+		
+		System.out.println("pessoa " + p1.toString());
+		
+		Aluno a1 = new Aluno();
+		
+		a1.setCurso("ads");
+		a1.setAnoIngresso("2023");
+		a1.setNome("pedro magalhães");
+		a1.setCPF("454454545");
+		a1.setSexo('M');
+		System.out.println("aluno " + a1.toString());
+
+	}
+
+}
